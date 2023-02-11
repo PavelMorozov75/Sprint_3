@@ -1,1 +1,36 @@
 # проект автоматизации тестирования отдельного функционала сервиса Stellar Burgers https://stellarburgers.nomoreparties.site/
+1. Проект реализован с помощью фреймвойрка pytest.
+2. Установить зависимости — pip install -r requirements.txt.
+3. Фикстуры находятся в файле conftest.py
+4. Используемые в тестах локаторы находятся в файле locators.txt
+5. Тесты сгруппированы в файлы в дирректории tests:
+
+registration.py
+test_registation_valid_user
+test_registation_not_valid_password_error
+test_registation_not_valid_email_not_registration
+test_registation_empty_name_not_registration
+
+authirization.py
+test_authorization_from_main_valid_user
+test_authorization_from_main_invalid_password
+test_authorization_from_main_invalid_email
+test_authorization_from_personal_account
+test_authorization_from_registration_form
+test_authorization_from_password_recovery_form
+
+transitions.py
+test_transition_from_main_to_personal_account_authorozed_user
+test_transition_from_personal_account_to_constructor
+test_transition_from_personal_account_to_constructor_click_on_log
+
+exit.py
+test_exit_from_personal_account_authorozed_user
+
+constructor.py
+test_constructor_start_element_is_breads
+test_constructor_transition_to_sauses
+test_constructor_transition_to_fillings
+test_constructor_transition_from_souses_to_breads
+
+6. Команда для запуска pytest -v tests/filename.py
