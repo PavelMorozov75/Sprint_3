@@ -1,0 +1,9 @@
+# created by virtualenv automatically
+.pytest_cache
+__pycaсhe__
+env
+.idea
+/c/Users/User/PycharmProjects/Sprint__3/tests/.pytest_cache
+/c/Users/User/PycharmProjects/Sprint__3/tests/__pycaсhe__
+tests/.pytest_cache
+tests/__pycaсhe__
